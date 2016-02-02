@@ -1,8 +1,14 @@
+/*This is setting the background for the page and the font for the headers*/
 body{
 	background-image: url(../../assets/images/sandpaper.png);
 	height: 100%;
 }
 
+h1, h2, h3, h4{
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+/*This container sets the borders for the page and clears positioning elements*/
 .container{
 	width: 100%;
 	min-height: 100%;
@@ -12,6 +18,7 @@ body{
 	position: relative;
 }
 
+/*Controls the header for the page*/
 .header{
 	width: 100%;
 	float: left;
@@ -20,7 +27,7 @@ body{
 	border-bottom: solid 1px;
 }
 
-.header h1{
+h1{
 	float: left;
 	font-size: 30px;
 	background-color: #4AAAA5;
@@ -52,6 +59,7 @@ a:hover{
 	color: #4AAAA5;
 }
 
+/*Controls the body of the pages*/
 .body{
 	max-width: 650px;
 	width: 100%;
@@ -62,7 +70,7 @@ a:hover{
 	margin-bottom: 150px;
 }
 
-.body h2{
+h2{
 	font-size: 25px;
 	color: #4AAAA5;
 	padding-bottom: 15px;
@@ -75,22 +83,31 @@ a:hover{
 	margin: 0 20px 10px 10px;
 }
 
-.body p{
+p{
 	line-height: 150%;
 	padding: 0px 20px 20px 20px;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-.body fieldset{
+fieldset{
 	padding: 0px 20px 20px 20px;
 	line-height: 150%;
 	font-size: 18px;
 }
 
-.body textarea{
+#nameAndEmail{
+	width: 100%;
+}
+
+textarea{
 	min-height: 200px;
 	width: 100%;
 	max-width: 605px;
+}
+
+#button{
+	height: 50px;
+	width: 100px;
 }
 
 #projects{
@@ -109,10 +126,7 @@ h4{
 	padding-top: 10px;
 }
 
-#nameAndEmail{
-	width: 100%;
-}
-
+/*Controls the style for the sidebar*/
 .aside{
 	max-width: 270px;
 	width: 100%;
@@ -133,9 +147,10 @@ h3{
 
 .aside ol li{
 	float:right;
-	margin: 0 10px 10px 12px;
+	margin: 0 15px 10px 10px;
 }
 
+/*Controls the styling for the footer*/
 .footer{	
 	width: 100%;
 	height: 100px;
@@ -150,13 +165,4 @@ h3{
 .footer p{
 	text-align: center;
 	margin-top: 25px;
-}
-
-h1, h2, h3{
-	font-family: 'Georgia', Times, 'Times New Roman', serif;
-}
-
-#button{
-	height: 50px;
-	width: 100px;
 }
